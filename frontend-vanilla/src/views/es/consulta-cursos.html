@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de cursos | Gestion de ambientes e instructores</title>
+    <link rel="stylesheet" href="../../estilos/variables.css">
+    <link rel="stylesheet" href="../../estilos/base.css">
+    <link rel="stylesheet" href="../../estilos/componentes.css">
+    <link rel="stylesheet" href="../../estilos/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+</head>
+<body> 
+ <a class="saltar" href="#contenido">Saltar al contenido</a>
+   <header class="encabezado"> 
+    <p class="marca"><a href="../index.html">Gestion de ambientes e instructores</a></p>
+    <nav aria-label="Menú principal">
+        <ul class="menu">
+            <li><a href="../index.html" aria-current="page">inicio</a></li>
+            <li><a href="consulta-cursos.html" aria-label="Cursos">Cursos</a></li>
+            <li><a href="disponibilidad.html" aria-label="Disponibilidad">Disponibilidad</a></li>
+            <li><a href="municipios.html" aria-label="Municipios">Municipio</a></li>
+            <li><a href="asignacion.html" aria-label="Asignacion">Asignacion</a></li>
+          
+        </ul>
+    </nav>
+   </header>
+   <main id="contenido" class="contenido"> 
+    <h1>Consulta de cursos</h1>    
+    <section aria-labelleadby="titulo-filtros">
+             <h2 id="titulo-filtros" class="filtros">Detalles del curso</h2>
+            <form class="barra-filtros" role="search" action="#">
+                <p class="campo">
+                    <label for="buscar-ficha">Número de ficha</label>
+                    <input id="buscar-ficha" name="ficha" type="search" inputmode="numeric" placeholder="Ej. 1000001">
+                </p>
+                <p class="campo">
+                    <label for="filtro-municipios">Municipios</label>
+                    <select name="municipio" id="filtro-municipios">
+                        <option value="">Todos</option>
+                        <option value="puerto-asís">Puerto Asís</option>
+                        <option value="mocoa">Mocoa</option>
+                        <option value="orito">Orito</option>
+                        <option value="puerto-caicedo">Puerto Caicedo</option>
+                    </select>
+                </p>
+                <p class="campo">
+                    <label for="filtro-programa">Programa</label>
+                    <select name="programa" id="filtro-programa">
+                        <option value="">Todos</option>
+                        <option value="100001">100001 Análisis y Desarrollo de Software</option>
+                        <option value="100002">100002 Gestión Empresarial</option>
+                        <option value="100003">100003 Acuicultura</option>
+                    </select>
+                </p>
+                <p class="campo">
+                    <label for="filtro-instructor">Instructor</label>
+                    <select name="instructor" id="filtro-instructor">
+                        <option value="">Todos</option>
+                        <option>Karol Montenegro</option>
+                        <option>Nestith Galarcio</option>
+                        <option>Juan Vasquez</option>
+                    </select>
+                </p>
+            </form>
+        </section>
+        <section aria-labelledby="titulo-resultados">
+            <h2 id="titulo-resultados">Resultados</h2>
+            <div class="tabla-contenedor">
+                <table class="tabla tabla-tarjetas">
+                    <caption>Cursos programados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Ficha</th>
+                            <th scope="col">Programa</th>
+                            <th scope="col">Munucipio</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Ambiente</th>
+                            <th scope="col">Instructor</th>                            
+                            <th scope="col">Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" data-titulo="Ficha">100001</th>
+                            <td data-titulo="Programa">Análisis y Desarrollo de Software</td>
+                            <td data-titulo="Munucipio">Puerto Asís</td>
+                            <td data-titulo="Sede">CAAA - 2</td>
+                            <td data-titulo="Ambiente">103</td>
+                            <td data-titulo="Instructor">Karol Montenegro</td>
+                            <td data-titulo="Horario">Lunes 06:00 - 12:00; Miercoles 06:00 - 12:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-titulo="Ficha">100002</th>
+                            <td data-titulo="Programa">Gestión Empresarial</td>
+                            <td data-titulo="Munucipio">Orito</td>
+                            <td data-titulo="Sede">CAAA - 1</td>
+                            <td data-titulo="Ambiente">102</td>
+                            <td data-titulo="Instructor">Juan Vasquez</td>
+                            <td data-titulo="Horario">Lunes 06:00 - 12:00; Miercoles 06:00 - 12:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-titulo="Ficha">100003</th>
+                            <td data-titulo="Programa">Acuicultura</td>
+                            <td data-titulo="Munucipio">Mocoa</td>
+                            <td data-titulo="Sede">CAAA - 3</td>
+                            <td data-titulo="Ambiente">101</td>
+                            <td data-titulo="Instructor">Nestith Galarcio</td>
+                            <td data-titulo="Horario">Lunes 06:00 - 12:00; Miercoles 06:00 - 12:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
+    </main>
+    <footer class="pie">
+        <p>Centro Agroforestal y Acuícola Arapaima - SENA Regional Putumayo</p>
+    </footer>
+</body>
+
+</html>
