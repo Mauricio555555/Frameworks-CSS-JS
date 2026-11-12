@@ -1,0 +1,150 @@
+.accesos{
+    display: grid;
+    gap: VAR(--espacio-3);
+    padding: 0;
+    list-style: none;
+}
+.accesos a{
+    display: block;
+    padding: VAR(--espacio-4);
+    background: VAR(--color-superficie);
+    border: 1px solid VAR(--color-primario);
+    border-radius: var(--radio-ls);
+    text-decoration: none;
+    font-weight: 600;
+    border-left: 4px solid;
+}
+
+.campo{
+    margin: 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-1);
+}
+.campo label{
+    font-weight: 600;
+    font-size: var(--texto-sm);
+}
+
+input, select{
+    font: inherit;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: var(--espacio-2) var(--espacio-3);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-ls);
+    background: var(--color-superficie);
+    color: var(--color-texto);
+}
+
+input:hover, select:hover{
+    border-color: var(--color-primario);
+}
+
+input:focus, select:focus{
+    outline: 3px solid var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+.error-campo{
+    color: var(--color-error);
+    font-size: var(--texto-sm);
+    min-height: 1.25em;
+}
+
+.tarjeta_formulario fieldset{
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--espacio-3);
+    padding: var(--espacio-4);
+    margin: 0 0 var(--espacio-4);
+    min-width: 0;
+    border: 1px solid var(--color-borde);
+    border-radius:var(--radio-ls);
+}
+.tarjeta_formulario legend{
+    font-weight: 600;
+    padding: 0 var(--espacio-2);
+}
+.barra-filtros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-3);
+    background: var(--color-superficie);
+    padding: var(--espacio-4);
+    border-radius:var(--radio-ls);
+    border: 1px solid var(--color-borde);
+}
+
+barra-filtros .campo{
+    flex: 1 1 12rem;
+}
+
+.tabla-contenedor{
+    overflow-x: auto;
+}
+
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--color-borde);
+}
+.tabla caption{
+    text-align: left;
+    font-weight: 600;
+    padding: var(--espacio-3);
+}
+.tabla th, .tabla td{
+    padding: var(--espacio-2) var(--espacio-3);
+    border: 1px solid var(--color-borde);
+    text-align: left;
+    vertical-align: middle;
+}
+.tabla thead th{
+    background: var(--color-primario);
+    color: var(--color-superficie);
+}
+.tabla tbody tr:hover{
+    background: var(--color-primario-claro);
+}
+
+.btn-secundario, .btn-primario{
+   font: inherit;
+   font-weight: 600;
+   min-width: var(--area-min);
+   padding: 0 var(--espacio-6);
+   border-radius: var(--radio-ls);
+   cursor: pointer;
+   border: 2px solid var(--color-primario);
+   transition: background-color 0.15s;
+}
+
+.btn-primario{
+    background: var(--color-primario);
+    color: var(--color-superficie);
+}
+
+.btn-primario:hover{
+    background: var(--color-primario-claro);
+}
+
+.btn-secundario{
+    background: var(--color-secundario);
+    color: var(--color-superficie);
+}
+
+.btn-secundario:hover{
+    background: var(--color-secundario-claro);
+}
+.btn-primario:disabled, .btn-secundario:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.acciones{
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--espacio-3);
+    flex-wrap: wrap;
+}

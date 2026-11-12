@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: var(--fuente-base);
+    font-size: var(--texto-base);
+    line-height: 1.5;
+    color: var(--color-texto);
+    background: var(--color-fondo);
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    font-size: var(--texto-xl);
+    margin: 0 0 var(--espacio-4);
+    line-height: 1.2;
+}
+h2 {
+    font-size: var(--texto-lg);
+    margin:var(--espacio-6) 0 var(--espacio-3);
+}
+
+a {
+    color: var(--color-primario);
+}
+a:hover {
+    color: var(--color-primario-oscuro);
+}
+
+:focus-visible{
+    outline:  3px solid var(--color-secundario);
+    outline-offset: 2px ;
+}
+
+.saltar{
+    position: absolute;
+    left: var(--espacio-2);
+    top: -3rem;
+    background: var(--color-superficie);
+    padding: var(--espacio-2) var(--espacio-4);
+    border-radius: var(--radio);
+    z-index: 10;
+}
+
+.encabezado{
+    background: var(--color-primario);
+    color: #fff;
+    padding: var(--espacio-3) var(--espacio-4);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espacio-2);
+}
+
+.marca{
+    margin: 0;
+    font-weight: 700;
+    font-size: var(--texto-lg);
+}
+.marca a{
+    color: #fff;
+    text-decoration: none;
+}
+.marca span{
+    color: var(--color-primario-claro);
+    font-weight: 400;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-1);
+}
+
+.menu a{
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--area-min);
+    padding: 0 var(--espacio-2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--radio-sm);
+}
+
+.menu a:hover {
+    background: var(--color-primario-oscuro);
+    color: #fff;
+}
+.menu a[aria-current="page"] {
+    background: #fff;
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+.contenido{
+    min-width: 0;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: var(--espacio-6) var(--espacio-4);
+}
+
+.pie{
+    color: azure;
+    background: var(--color-primario);
+    font-size: var(--texto-sm);
+    padding: var(--espacio-4);
+}
