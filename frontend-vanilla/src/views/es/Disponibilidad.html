@@ -1,14 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disponibilidad de ambientes | Gestión de ambientes Putumayo</title>
+    <link rel="stylesheet" href="../../estilos/variables.css">
+    <link rel="stylesheet" href="../../estilos/base.css">
     <link rel="stylesheet" href="../../estilos/componentes.css">
+    <link rel="stylesheet" href="../../estilos/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
 </head>
+
 <body>
-    <div>
-        Hola
-    </div>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+        <p class="marca"><a href="../../../index.html"> Gestión de <span> ambientes e instructores</span></a></p>
+        <nav aria-label="Menú principal">
+            <ul class="menu">
+                <li><a href="../../../index.html" aria-current="page">Inicio</a></li>
+                <li><a href="consulta-cursos.html">Cursos</a></li>
+                <li><a href="municipios.html">Municipios</a></li>
+                <li><a href="disponibilidad.html">Disponibilidad</a></li>
+                <li><a href="asignacion.html">Asignacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido" class="contenido">
+        <h1>Disponibilidad de ambientes</h1>
+        <p>Puerto Asís . Sede Centro . <strong>Ambiente 103</strong> (capacidad 30, sistemas)</p>
+        <ul class="leyenda" aria-label="Convenciones">
+            <li><span class="muestra libre"></span>Libre</li>
+            <li><span class="muestra ocupada"></span>Ocupada</li>
+            <li><span class="muestra mantenimiento"></span>En mantenimiento</li>
+        </ul>
+        <div class="tabla-contenedor" tabindex="0" role="region" aria-label="Grilla semanal desplazable">
+            <div class="grilla-semanal" role="table" aria-label="Disponibilidad semanal del Aula 101, Sede Centro">
+                <div role="row">
+                    <span role="columnheader">Franja</span>
+                    <span role="columnheader">Lunes</span>
+                    <span role="columnheader">Martes</span>
+                    <span role="columnheader">Miércoles</span>
+                    <span role="columnheader">Jueves</span>
+                    <span role="columnheader">Viernes</span>
+                    <span role="columnheader">Sábado</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">06:00</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">07:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">08:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">09:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">10:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">11:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">12:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 1000001</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">13:00</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">14:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 2900502</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 2900502</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+                <div role="row">
+                    <span role="rowheader">15:00</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 2900502</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario ocupada">Ocupada: ficha 2900502</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                    <span role="cell" class="celda-horario libre">Libre</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <p>Centro Agroforestal y Acuícola Arapaima - SENA Regional Putumayo</p>
+    </footer>
 </body>
+
 </html>

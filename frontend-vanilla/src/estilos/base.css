@@ -39,6 +39,15 @@ a:hover {
     outline-offset: 2px ;
 }
 
+.filtros{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
 .saltar{
     position: absolute;
     left: var(--espacio-2);
