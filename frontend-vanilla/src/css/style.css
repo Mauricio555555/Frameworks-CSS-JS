@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primario: #0f766e;
+    --color-primario-oscuro: #115e59;
+    --color-primario-claro: #ccfbf1;
+    --color-secundario: #f59e0b;
+    --color-superficie: #ffffff;
+    --color-texto: #1f2937;
+    --color-texto-suave: #4b5563;
+    --color-texto-claro: #ffffff;
+    --color-fondo: #f8fafc;
+    --color-borde: #cbd5e1;
+    --color-error: #b91c1c;
+    --color-exit: #15803d;
+
+    --color-libre: #dcfce7;
+    --color-libre-texto: #166534;
+    --color-ocupado: #fee2e2;
+    --color-ocupado-texto: #991b1b;
+    --color-manteniento: #fef3c7;
+    --color-manteniento-texto: #92400e;
+
+    --font-base: "Inter", system-ui, -apple-system, "Segue UI", Roboto, sans-serif;
+
+    --area-min: 35px;
+}
+
+@layer components{
+    .cards{
+        @apply block h-full rounded-lg border border-primario border-l-4 border-l-primario bg-white p-4 shadow-sm shadow-black hover:border-l-secundario
+    }
+}
